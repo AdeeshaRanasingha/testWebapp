@@ -63,9 +63,18 @@ else{
             
             localStorage.setItem("name" , name);
             localStorage.setItem("password" , password);
-    
-            alert("credentials were successfully changed");
-            window.location.reload();
+
+                //checking the fields
+            let value1 = document.getElementById("name").value.trim();
+            let value2 = document.getElementById("password").value.trim();
+
+            if(value1.length == 0 || value2.length == 0){
+                alert("havent filled all the sections");
+            }
+            else{
+                alert("credentials were successfully changed");
+                window.location.reload();
+            } 
     
         }
     
@@ -79,10 +88,20 @@ else{
         
         //if password maches move to the site
         if(localStorage.getItem("password") == password && localStorage.getItem("name") == name){
-            alert("succesfully loged in");
 
-            document.getElementById("main").style.display="none";
-            window.location.href = "index.html";
+            //checking the fields
+            let value1 = document.getElementById("name").value.trim();
+            let value2 = document.getElementById("password").value.trim();
+
+            if(value1.length == 0 || value2.length == 0){
+                alert("havent filled all the sections");
+            }
+            else{
+                alert("succesfully loged in");
+
+                document.getElementById("main").style.display="none";
+                window.location.href = "index.html";
+            }
         }
         else{
             alert("some thing went wrong");
