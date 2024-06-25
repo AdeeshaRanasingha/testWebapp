@@ -1,3 +1,6 @@
+let value1 = document.getElementById("name").value.trim();
+let value2 = document.getElementById("password").value.trim();
+
 //signup form for first users
 if(localStorage.getItem("name") == null && localStorage.getItem("password") == null){
 
@@ -21,8 +24,13 @@ if(localStorage.getItem("name") == null && localStorage.getItem("password") == n
         localStorage.setItem("email" , email);
         localStorage.setItem("contact" , contact);
 
-        alert("signed up successfully");
-        window.location.href = "index.html";
+        if(value1.length == 0 || value2.length == 0){
+            alert("havent filled all the sections");
+        }
+        else{
+            alert("signed up successfully");
+            window.location.href = "index.html";
+        }
     }
 }
 
