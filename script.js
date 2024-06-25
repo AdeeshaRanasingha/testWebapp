@@ -1,5 +1,3 @@
-let value1 = document.getElementById("name").value.trim();
-let value2 = document.getElementById("password").value.trim();
 
 //signup form for first users
 if(localStorage.getItem("name") == null && localStorage.getItem("password") == null){
@@ -23,6 +21,12 @@ if(localStorage.getItem("name") == null && localStorage.getItem("password") == n
         localStorage.setItem("password" , password);
         localStorage.setItem("email" , email);
         localStorage.setItem("contact" , contact);
+
+
+        //finding the empty field
+        let value1 = document.getElementById("name").value.trim();
+        let value2 = document.getElementById("password").value.trim();
+
 
         if(value1.length == 0 || value2.length == 0){
             alert("havent filled all the sections");
