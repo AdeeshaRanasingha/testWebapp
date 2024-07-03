@@ -4,21 +4,28 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="IndexStyle.css">
+    
     <script src="https://kit.fontawesome.com/9e7cd11b0c.js" crossorigin="anonymous"></script>
     <title>Home</title>
 </head>
 <body>
-    <div class="header">
-        <img src="logo.jpg" alt="logo" id="logo">
-        <div class="icons">
-            <i class="fa-brands fa-youtube fa-xl" class="youtube" ></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <i class="fa-brands fa-facebook fa-xl"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <i class="fa-solid fa-house fa-xl"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <i class="fa-solid fa-gear fa-xl"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <i class="fa-brands fa-twitter fa-xl"></i>
-        </div>
+    <div class="top" id="top">
+        ceylux clothing
     </div>
-    <h1>wade hari yako</h1>
+    <div class="header" id="header">
+        <img src="bg1.jpg" alt="logo" id="logo">
+        <div class="cey">ceylux clothing</div>
+        <div class="icons">
+            <i class="fa-solid fa-calculator fa-xl" class="youtube" ></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <i class="fa-solid fa-gamepad fa-xl"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <i class="fa-solid fa-house fa-xl" onclick="home()"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <i class="fa-solid fa-gear fa-xl" id="setting"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <i class="fa-solid fa-bars fa-xl"></i>
+        </div>
+        <i class="fa-solid fa-bars fa-xl" id="bars"></i>
+    </div>
+    <div class="inner" id="inner">
+        <h1>wade hari yako</h1>
     <h1>karala balanna.... aaasa hithey :)</h1>
     <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempore asperiores dolor cumque praesentium. Es<br><br>
 
@@ -31,6 +38,25 @@
         t eaque voluptates in, omnis ab at repellat explicabo, saepe magni p
         <br>
         ossimus deserunt fugit expedita a libero.</p>
+    </div>
+
+    <div class="setting" id="displaySetting">
+        <h1>Appearence</h1>
+
+        change theme <button id="theme" onclick="theme()">light mode</button><br><br>
+        change the color <input type="color" name="color" id="color" onclick="changeColor()"><br><br>
+        change Bg img <button type="button" id="bgImage" onclick="changeBgImg()">change</button><br><br>
+
+        <h1>Credentials</h1>
+
+        user name <input type="text" id="userName"><br><br>
+        e mail <input type="email" name="" id="email"><br><br>
+        contact no <input type="number" name="" id="contact"><br><br>
+        birthday <input type="date" name="" id="birthday"><br><br><br><br>
+
+        <button id="savebtn" onclick="save()">save changes</button>
+    </div>
+    
     
     <script src="indexscript.js"></script>
 </body>
