@@ -1,11 +1,11 @@
 body{
-    background: url("logo.jpg");
+    background: url("bg2.jpg");
     background-position: fixed;
     background-attachment: fixed;
     background-size: cover;
     background-repeat: no-repeat;
     margin: 0;
-    color: white;
+    color: rgb(248, 248, 248);
 }
 #logo{
     height: 50px;
@@ -16,25 +16,120 @@ body{
     cursor: pointer;
     
 }
+.top{
+    display: none;
+}
+.cey{
+    display: block;
+        text-align: center;
+        font-size: 25px;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        font-style: italic;
+        font-weight: bold;
+        position: relative;
+        text-transform: capitalize;
+        text-decoration: solid;
+        top: -40px;
+}
 .header{
     
     background-color: rgba(0, 0, 0, 0.5);
     margin-top: -15px;
     
-    position: fixed;
+    position: absolute;
     width: 100%;
     z-index: 10;
     align-content: center;
     align-items: center;
     align-self: center;
 }
+.header img{
+    padding-top: 25px;
+    cursor: pointer;
+}
 .icons{
     display: none;
+}
+
+#bars{
+    
+    position: relative;
+    align-items: right;
+    float: right;
+    top: -50px;
+    right: 30px;
+    cursor: pointer;
 }
 
 p{
     font-size: 50px;
 }
+
+.inner{
+    padding-top: 100px;
+    display: block;
+}
+
+#displaySetting{
+    padding-top: 100px;
+    display: none;
+    margin-left: 10px;
+    font-size: 20px;
+}
+#theme{
+    margin-left: 30%;
+    font-size: 15px;
+    background-color: azure;
+    color: black;
+    border-radius: 50px;
+    padding: 15px;
+    border: none;
+    font-weight: bolder;
+    text-transform: capitalize;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    cursor: pointer;
+}
+#color{
+    margin-left: 30%;
+    width: 100px;
+    size: 80px;
+    height: 40px;
+}
+#bgImage{
+    margin-left: 30%;
+    font-size: 15px;
+    background-color: azure;
+    color: black;
+    border-radius: 50px;
+    padding: 15px 30px;
+    border: none;
+    font-weight: bolder;
+    text-transform: capitalize;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    cursor: pointer;
+    
+}
+input{
+    margin-left: 30%;
+    justify-content: space-evenly;
+    font-size: 30px;
+    
+}
+#savebtn{
+    margin-left: 30%;
+    font-size: 15px;
+    background-color: azure;
+    color: black;
+    border-radius: 50px;
+    padding: 15px;
+    border: none;
+    font-weight: bolder;
+    text-transform: capitalize;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    cursor: pointer;
+}
+
+
 
 @media screen and (max-width: 600px) {
     .header{
@@ -57,7 +152,48 @@ p{
     .icons{
         display: block;
         
-        padding: 10px;
+        padding-top: 10px;
+        padding-bottom: 15px;
+        
+    }
+    .top{
+        display: block;
+        background-color: rgb(0, 0, 0);
+        width: 100%;
+        text-align: center;
+        padding: 5px;
+        
+        font-size: 25px;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        font-style: italic;
+        font-weight: bold;
+        position: relative;
+        text-transform: capitalize;
+        text-decoration: solid;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+    .cey{
+        display: none;
+    }
+    .inner{
+        padding-top: 0px;
+    }
+    #bars{
+        display: none;
+    }
+
+    #displaySetting{
+        padding-top: 0px;
+        display: none;
+        margin-left: 10px;
+    }
+
+    input{
+        margin-left: 30%;
+        justify-content: space-evenly;
+        font-size: 20px;
+        padding-left: 10px;
         
     }
 }
