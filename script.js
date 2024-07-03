@@ -6,9 +6,9 @@ if(localStorage.getItem("name") == null && localStorage.getItem("password") == n
 
     document.getElementById("reset").style.display="none";
 
-    document.getElementById('heading').innerHTML="sign up"
+    document.getElementById('heading').innerHTML="sign up";
 
-    document.getElementById('loginBtn').innerHTML = "sign up"
+    document.getElementById('loginBtn').innerHTML = "sign up";
 
     function login(){
         let name = document.getElementById("name").value;
