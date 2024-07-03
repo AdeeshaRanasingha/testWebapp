@@ -2,7 +2,7 @@
 //signup form for first users
 if(localStorage.getItem("name") == null && localStorage.getItem("password") == null){
 
-    
+    localStorage.setItem("count" , 0);// to change the theme 
 
     document.getElementById("reset").style.display="none";
 
